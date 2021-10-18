@@ -25,3 +25,11 @@ for number in numbers:
 
 for i in range(0,7):
     print("I would love " + str(i) + " cookies")
+
+
+
+players = 11
+
+while players >= 5 :
+    print("The remaining players are",players)
+    players -= 1
