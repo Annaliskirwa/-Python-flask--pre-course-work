@@ -1,5 +1,6 @@
+import sys
 print ("What is your name?")
-name = input()
+name = sys.argv[1]
 
 print ("How old are you?")
 age = input()
