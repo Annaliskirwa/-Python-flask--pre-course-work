@@ -21,3 +21,7 @@ numbers = [1,2,3,4,5]
 
 for number in numbers:
     print(number)
+
+
+for i in range(0,7):
+    print("I would love " + str(i) + " cookies")
