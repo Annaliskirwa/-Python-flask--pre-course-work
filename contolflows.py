@@ -15,3 +15,9 @@ if list_a:
     print("I will not run")
 else:
         print("I am Empty")
+
+
+numbers = [1,2,3,4,5]
+
+for number in numbers:
+    print(number)
