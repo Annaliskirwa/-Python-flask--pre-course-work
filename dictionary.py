@@ -13,4 +13,6 @@ cat_name = my_cat['name']
 birthdays = {"John":"August 1","Marcus":"April 8"}
 birthdays["mary"] = "September 14"
 print(birthdays) # this prints {"John":"August 1","Marcus":"April 8","Mary":"September 14"}
+print(birthdays.keys()) # this prints dict_keys(['John', 'Marcus', 'Mary'])
+print(birthdays.values())
 print(cat_name) # 'Mr sniffles'
