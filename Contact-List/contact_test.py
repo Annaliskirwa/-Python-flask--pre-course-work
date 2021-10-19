@@ -95,6 +95,13 @@ class TestContact(unittest.TestCase):
 
         self.assertTrue(contact_exists)
 
+    def test_display_all_contacts(self):
+        '''
+        method that returns a list of all contacts saved
+        '''
+
+        self.assertEqual(Contact.display_contacts(),Contact.contact_list)
+
 if __name__ == '__main__':
     unittest.main() #command line interface that collects all the tests methods and executes them.
 
