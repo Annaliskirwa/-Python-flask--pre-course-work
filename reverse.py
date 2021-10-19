@@ -53,3 +53,16 @@ while count > 0:
     count = count - 1 # decrement index  
 print ("The reversed string using a while loop is : ",reverse_String)# reversed string  
 
+
+
+#  Reverse a string    
+# using  slice syntax   
+# reverse(str) Function to reverse a string   
+def reverse(str):   
+    str = str[::-1]   
+    return str   
+    
+s = "JavaTpoint"  
+print ("The original string  is : ",s)   
+print ("The reversed string using extended slice operator  is : ",reverse(s))  
+
