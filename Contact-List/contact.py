@@ -32,7 +32,7 @@ class Contact:
         Contact.contact_list.remove(self)
     
 
-    @classmethod
+    @classmethod   #Decorators allow you to make simple modifications to callable objects like functions, methods, or classes.
     def find_by_number(cls,number):
         '''
         Method that takes in a number and returns a contact that matches that number.
