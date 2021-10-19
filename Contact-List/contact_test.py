@@ -12,7 +12,7 @@ class TestContact(unittest.TestCase):
 
 # Items up here .......
 
-    def setUp(self):
+    def setUp(self): #define instructions that will be executed before each test method
         '''
         Set up method to run before each test cases.
         '''
@@ -24,6 +24,7 @@ class TestContact(unittest.TestCase):
         test_init test case to test if the object is initialized properly
         '''
 
+        #checks for an expected result
         self.assertEqual(self.new_contact.first_name,"James")
         self.assertEqual(self.new_contact.last_name,"Muriuki")
         self.assertEqual(self.new_contact.phone_number,"0712345678")
@@ -31,4 +32,5 @@ class TestContact(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main() #command line interface that collects all the tests methods and executes them.
+
