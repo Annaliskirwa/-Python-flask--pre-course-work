@@ -5,7 +5,7 @@ def isPalindrome(s):
 
 
 # Driver code
-s = "malayalam"
+s ="11211"
 ans = isPalindrome(s)
 
 if ans:
