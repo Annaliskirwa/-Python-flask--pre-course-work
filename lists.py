@@ -9,5 +9,6 @@ list_a.extend(list_b)
 list_a.append("e")
 
 list_b.reverse()
+list_b.sort()
 print (list_a)
 print(list_b)
