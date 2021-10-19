@@ -4,6 +4,15 @@ class Contact:
     """
     #class variable
     contact_list = [] #empty contact list
+     # Init method up here
+    def save_contact(self):
+
+        '''
+        save_contact method saves contact objects into contact_list
+        '''
+
+        Contact.contact_list.append(self)
+        
     def __init__(self,first_name,last_name,phone_number,email):
 
       # docstring removed for simplicity
