@@ -33,3 +33,13 @@ players = 11
 while players >= 5 :
     print("The remaining players are",players)
     players -= 1
+
+
+
+
+number = 0
+while True:
+    print("I love candy "+ str(number))
+    number +=1
+    if number == 7 :
+        break   
