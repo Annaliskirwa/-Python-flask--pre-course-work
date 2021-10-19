@@ -43,3 +43,16 @@ while True:
     number +=1
     if number == 7 :
         break   
+
+
+
+# taken numbers
+numTaken = [3,5,7,11,13]
+
+print("Available numbers")
+
+# loop
+for i in range(1,15):
+    if i in numTaken:
+        continue
+    print(i)
