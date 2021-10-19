@@ -14,3 +14,6 @@ def get_age():
         return age
     except ValueError:
         return "That was not a valid input"
+
+
+#other errors are identation errors, name errors and type errors
