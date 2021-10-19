@@ -8,4 +8,9 @@ my_dict = dict()
 # Creating a dictionary with keys and values
 my_cat = {'name':'Mr sniffles','age':18, 'color':'black'}
 cat_name = my_cat['name']
+
+
+birthdays = {"John":"August 1","Marcus":"April 8"}
+birthdays["mary"] = "September 14"
+print(birthdays) # this prints {"John":"August 1","Marcus":"April 8","Mary":"September 14"}
 print(cat_name) # 'Mr sniffles'
