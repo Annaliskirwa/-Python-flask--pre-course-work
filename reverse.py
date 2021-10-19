@@ -77,3 +77,10 @@ s = "JavaTpoint"
   
 print ("The original string is : ",s)   
 print ("The reversed string using reversed() is : ",reverse(s) )  
+
+#reversing a string using recursion
+def reverse(str):   
+    if len(str) == 0: # Checking the lenght of string  
+        return str   
+    else:   
+        return reverse(str[1:]) + str[0]   
