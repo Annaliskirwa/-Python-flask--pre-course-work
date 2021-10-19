@@ -12,7 +12,7 @@ class Contact:
         '''
 
         Contact.contact_list.append(self)
-        
+
     def __init__(self,first_name,last_name,phone_number,email):
 
       # docstring removed for simplicity
@@ -22,5 +22,12 @@ class Contact:
         self.last_name = last_name
         self.phone_number = phone_number
         self.email = email
+        
+    def delete_contact(self):
 
+        '''
+        delete_contact method deletes a saved contact from the contact_list
+        '''
+
+        Contact.contact_list.remove(self)
 #new_contact.first_name
