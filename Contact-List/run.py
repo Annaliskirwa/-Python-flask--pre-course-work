@@ -21,3 +21,9 @@ def del_contact(contact):
     Function to delete a contact
     '''
     contact.delete_contact()
+
+def find_contact(number):
+    '''
+    Function that finds a contact by number and returns the contact
+    '''
+    return Contact.find_by_number(number)
