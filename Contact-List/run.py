@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.6
+print ("aNNALIS")
 
 #the shebang 
 
@@ -39,3 +40,9 @@ def display_contacts():
     Function that returns all the saved contacts
     '''
     return Contact.display_contacts()
+
+
+
+##Main function
+def main():
+    print("Hello and welcome to our contact list")
