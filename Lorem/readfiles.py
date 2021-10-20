@@ -22,5 +22,12 @@ def read_file(text_file):
 
         return None
 
-        
+
+handle = open (text_file, "r")
+data = handle.read()
+counter = 0
+for word in data.split():
+         if word == "Lorem":
+             counter +=1
+print (counter)
 read_file(text_file)
