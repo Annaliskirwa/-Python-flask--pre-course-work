@@ -1,4 +1,4 @@
-handle = open("text.txt", "r")
+handle = open("test.txt", "r")
 
 data = handle.read()
 print(data)
