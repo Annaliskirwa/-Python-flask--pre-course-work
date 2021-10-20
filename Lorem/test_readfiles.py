@@ -23,5 +23,13 @@ def test_nonfile(self):
         """
         self.assertEqual(None,readfiles.read_file("tests.txt"))
 
+def test_word_count(self):
+    """
+    Test to check the word count
+    """
+    handle = open("test.txt", "r")
+    data = handle.read()
+    self.assertEqual(data,readfiles.read_file("test.txt"))
+
 if __name__ == '__main__':
     unittest.main()
