@@ -9,8 +9,9 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
+    title = 'Home - Welcome to The best Movie Review Website Online'
     message = "Watchlist should be picked from this template : Hello"
-    return render_template('index.html', message = message)
+    return render_template('index.html', title = title, message= message)
 
 @app.route('/movie/<int:movie_id>')
 def movie(movie_id):
