@@ -9,3 +9,7 @@ def hello_world():
 @app.route('/name')
 def hello(name):
     return f"Hello, {escape(name)}!"
+
+@app.route('/hello')
+def hello():
+    return 'Hello, World'
