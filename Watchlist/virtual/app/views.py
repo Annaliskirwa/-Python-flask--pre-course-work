@@ -9,4 +9,5 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    return render_template('index.html')
+    message = "Watchlist should be picked from this template : Hello"
+    return render_template('index.html', message = message)
