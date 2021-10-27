@@ -1,18 +1,2 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best Movie Review website </title>
-        {% endif %}
-    </head>
-    <body>
-        <!-- Content block -->
-
-        {% block content %}
-
-        {% endblock%}
-    </body>
-</html>
+{% extends 'bootstrap/base.html'%}
+<!--Flask-Bootstrap contains its own base.html which has defined blocks that we can refer to and add our own data-->
