@@ -4,9 +4,9 @@ from .requests import get_movies
 from .requests import get_movies,get_movie
 from .requests import get_movies,get_movie,search_movie
 from flask import render_template,request,redirect,url_for
-from .models import review
+from .models import reviews
 from .forms import ReviewForm
-Review = review.Review
+Review = reviews.Review
 
 # Views
 @app.route('/')
