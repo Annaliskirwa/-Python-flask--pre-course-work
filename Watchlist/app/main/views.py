@@ -1,15 +1,16 @@
 from flask import render_template,request,redirect,url_for
-from app import app
-from .requests import get_movies,get_movie,search_movie
+from . import main
+from ..requests import get_movies,get_movie,search_movie
 from .forms import ReviewForm
-from .models import review
+from ..models import Review
 
-Review = review.Review
+
+Review = Review.Review
 
 
 
 # Views
-@app.route('/')
+@main.route('/')
 def index():
 
     '''
