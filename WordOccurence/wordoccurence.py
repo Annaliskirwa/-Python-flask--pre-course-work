@@ -1,5 +1,7 @@
 #! /usr/bin/python
 
+
+# maketrans not supported in python2, run with python3
 import string
 
 text = open("sample.txt", "r")
