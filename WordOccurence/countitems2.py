@@ -1,8 +1,12 @@
+from string import punctuation
 import urllib.request, urllib.error, urllib.parse
 
-url = 'https://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
+# Taking the user input of the webpage input and assigning it as url
+url = input("Enter the webpage url: ")
 
+# For example website url = https://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33
 
+# Method for returning the text
 def stripTags(pageContents):
     pageContents = str(pageContents)
     startLoc = pageContents.find("<p>")
@@ -25,17 +29,17 @@ def stripTags(pageContents):
 
     return text
 
-# Given a text string, remove all non-alphanumeric
-# characters (using Unicode definition of alphanumeric).
-
+# Removing the punctuation marks
 def stripNonAlphaNum(text):
     import re
     return re.compile(r'\W+', re.UNICODE).split(text)
 
+# Method for converting the dict to list
 def wordListToFreqDict(wordlist):
     wordfreq = [wordlist.count(p) for p in wordlist]
     return dict(list(zip(wordlist,wordfreq)))
 
+# The sorting method of the list
 def sortFreqDict(freqdict):
     aux = [(freqdict[key], key) for key in freqdict]
     aux.sort()
@@ -50,4 +54,5 @@ wordlist = stripNonAlphaNum(text)
 dictionary = wordListToFreqDict(wordlist)
 sorteddict = sortFreqDict(dictionary)
 
+# Outputting the list frequencies
 for s in sorteddict: print(str(s))
