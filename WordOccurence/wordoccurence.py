@@ -1,5 +1,7 @@
 #! /usr/bin/python
 
+import string
+
 text = open("sample.txt", "r")
 
 d = dict()
@@ -7,6 +9,7 @@ d = dict()
 for line in text:
     line = line.strip()
     line = line.lower()
+    line = line.translate(line.maketrans("", "", string.punctuation))
     words = line.split()
 
     for word in words:
