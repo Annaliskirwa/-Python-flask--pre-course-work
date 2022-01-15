@@ -56,3 +56,5 @@ sorteddict = sortFreqDict(dictionary)
 
 # Outputting the list frequencies
 for s in sorteddict: print(str(s))
+
+#On the terminal run python3 problem3.py to run and compile
