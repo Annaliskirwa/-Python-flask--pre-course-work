@@ -3,9 +3,12 @@ wordstring += 'it was the age of wisdom it was the age of foolishness'
 
 wordlist = wordstring.split()
 
-wordfreq = []
-for w in wordlist:
-    wordfreq.append(wordlist.count(w))
+# wordfreq = []
+# for w in wordlist:
+#     wordfreq.append(wordlist.count(w))
+
+wordfreq = [wordlist.count(w) for w in wordlist] # a list comprehension
+
 
 
 print("String\n" + wordstring +"\n")
