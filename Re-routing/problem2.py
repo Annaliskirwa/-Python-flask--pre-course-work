@@ -7,3 +7,6 @@ sock.connect(('0.0.0.0', 8080))
 
 #Send some data
 sock.send("Twenty-five bytes to send")
+
+#Receive 4096 bytes from a peer
+sock.recv(4096)
