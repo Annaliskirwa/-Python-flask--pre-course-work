@@ -27,6 +27,8 @@ while True:
     #Sending a message that the client has been disconnected
     print ('client disconnected')
 
+#On the terminal run python3 problem2.py to run and compile
+# Use 2 terminal windows(one server, the other client) at the same time the other uses the below code
 
 
 
