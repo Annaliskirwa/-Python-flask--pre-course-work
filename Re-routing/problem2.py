@@ -10,3 +10,6 @@ sock.send("Twenty-five bytes to send")
 
 #Receive 4096 bytes from a peer
 sock.recv(4096)
+
+#Close the socket connection
+sock.close()
